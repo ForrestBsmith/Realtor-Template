@@ -1,377 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KERRY WILLIAMS REALTY</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <head>
-      <!-- Other head elements -->
-      <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        rel="stylesheet"
-      />
-    </head>
-    
-    <link rel="stylesheet" type="text/css" href="index.css">
-  </head>
-  <!-- HEADER -->
-  <body>
-    <!-- background image -->
-    <div class="background" style="background: url(waco-suspension-bridge.jpg); opacity: 0.3; z-index: -1; background-size: cover; position: fixed; width: 100%; height: 100%;"></div>
-    <!-- background image -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KERRY WILLIAMS REALTY</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <style>
+    .background {
+      background: url(waco-suspension-bridge.jpg);
+      opacity: 0.5;
+      z-index: -1;
+      background-size: cover;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+    }
 
-    <nav class="navbar navbar-expand-lg navbar-dark" style="height: 6em; font-size: 1.1rem;background: rgb(42, 69, 69);">
-      <div class="container">
-        <a class="navbar-brand" href="#" style="font-size: 1.1em;color: wheat;font-weight: 600;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="green" class="bi bi-house-door-fill" viewBox="0 0 16 16">
-            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
-          </svg>
-          <!-- NAVBAR -->
-          KERRY WILLIAMS REALTY
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"style="color: wheat;">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"style="color: wheat;">Properties</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"style="color: wheat;"
-              >
-                Buyer/Seller Info
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Buyer Info</a></li>
-                <li><a class="dropdown-item" href="#">Seller Info</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Market Analysis</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-success" type="submit" style="background-color: wheat; border-color: wheat;color:rgb(42, 69, 69) ;">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-    <!-- END OF HEADER -->
+    .card{
+      background:rgb(26, 33, 25);
+      color: white;
+    }
 
-    <p class="h1 text-center" style="font-size: 5em; font-weight: 900; position: relative; top: 1em;font-style: oblique; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;word-spacing: .5rem;letter-spacing: 1.2rem;">Central Texas Realty</p>
-    <div class="container" style="position: relative; top: 12em;">
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="home 1.jpg" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="home 2.jpg" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="home 3.jpg" class="d-block w-100" alt="..." />
-          </div>
-        </div>
+    .navbar-dark .navbar-brand svg {
+      fill: rgb(26, 33, 25);
+    }
+
+    .navbar
+
+    .text-center h1, .signup-bg h3 {
+      font-weight: 700;
+    }
+
+    .signup-bg {
+      background: rgba(26, 33, 25, 0.881);
+      z-index: 1;
+      position: relative;
+      top: 1em;
+      height: 36em;
+      width: 100%;
+      padding: 2em 0;
+    }
+
+    .signup-bg .container {
+      position: relative;
+      color: black;
+    }
+
+    .nav-link-spacing {
+  margin-right: 130px; /* Adjust the value as needed */
+  position: relative;
+  right: 12em;
+  z-index: 1;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark" style="height: 7.5em;">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="font-size: 1.5em;color: black;font-weight: 600;right:10em;position: relative;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+          <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+        </svg>
+        KERRY WILLIAMS REALTY
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  <li class="nav-item nav-item-spacing">
+    <a class="nav-link active nav-link-spacing" aria-current="page" href="#" style="color: black;">Home</a>
+  </li>
+  <li class="nav-item nav-item-spacing">
+    <a class="nav-link nav-link-spacing" href="#" style="color: black;">Properties</a>
+  </li>
+  <li class="nav-item dropdown nav-item-spacing">
+    <a class="nav-link dropdown-toggle nav-link-spacing" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black">
+      Buyer/Seller Info
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <li><a class="dropdown-item" href="#" style="font-weight: 700;">Buyer Info</a></li>
+      <li><a class="dropdown-item" href="#" style="font-weight: 700;">Seller Info</a></li>
+      <li><hr class="dropdown-divider" /></li>
+      <li><a class="dropdown-item" href="#" style="font-weight: 700;">Market Analysis</a></li>
+    </ul>
+  </li>
+</ul>
+
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-success" type="submit" style="background-color: white; border-color: black;color:rgb(109, 120, 124) ;">Search</button>
+        </form>
       </div>
     </div>
+  </nav>
 
-    <!-- SIGN-UPS -->
-    <p class="h1 text-center" style="font-size: 5em; font-weight: 700; position: relative; top: 19rem; font-family: Verdana, Geneva, Tahoma, sans-serif;">Contact Us For Your Dream Home!</p>
-    <div class="signup-bg" style="background: rgb(42, 69, 69); z-index: -1; position: relative; top: 26em; height: 40em; width: 100%;">
-      <p class="h1 text-center" style="color: white; position: relative; top: 13em;color: wheat;">Set An Appointment Today To Find Your Dream Home!</p>
-      <div class="container" style="position: relative; top: -4em;color: wheat;">
+  <!-- carousel -->   
+ 
+
+  <!-- SIGN-UPS -->
+   
+  <div class="signup-bg">
+        <!-- KERRY WILLIAMS PHOTO/BIO -->
+        <div class="container" style="position: relative; top: 8em;width: 60%;margin-left: -8em;">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="whitewoman 1.jpg" class="img-fluid rounded-start" alt="..." />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-size: 3em;">Kerry Williams</h5>
+                      <p class="card-text" style="font-weight: 500;">
+                        Kerry has 15 years of experience starting her real estate career in Houston, Texas in 2004. There she learned cutting edge marketing from the big city and brought it back home to Waco, and purchased her own real estate company. With that knowledge she has grown her company into the number one producing company in Mclennan County as of 2019.
+                      </p>
+                      <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <h3 class="my-5 text-center" style="font-weight: 700;color: white;position: relative;top: -12em;">Let's Find Your Dream Home!</h3>
+      <div class="container" style="color: white;position: relative;top: -21em;left: 25em;z-index: 1;width:50%;">
         <div class="row">
           <div class="col-md-6 offset-md-3">
-            <h3 class="my-5 text-center" style="font-weight: 700;color: wheat;">Create An Account With Us</h3>
-            <form class="row g-3 needs-validation" novalidate>
-              <div class="col-md-6">
-                <label for="validationCustom01" class="form-label">First name</label>
-                <input type="text" class="form-control" id="validationCustom01" value="Mark" required />
-                <div class="valid-feedback">Looks good!</div>
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Name</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required />
+              <div class="invalid-feedback">
+                Please enter your name.
               </div>
-              <div class="col-md-6">
-                <label for="validationCustom02" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="validationCustom02" value="Otto" required />
-                <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputPassword1" required />
+              <div class="invalid-feedback">
+                Please enter a valid email address.
               </div>
-              <div class="col-md-12">
-                <label for="validationCustomUsername" class="form-label">Username</label>
-                <div class="input-group">
-                  <span class="input-group-text" id="inputGroupPrepend">@</span>
-                  <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required />
-                  <div class="invalid-feedback">Please choose a username.</div>
-                </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlSelect1" class="form-label">Interested in:</label>
+              <select class="form-select" id="exampleFormControlSelect1" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="buying">Buying a Home</option>
+                <option value="selling">Selling a Home</option>
+                <option value="both">Both</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select an option.
               </div>
-              <div class="col-md-6">
-                <label for="validationCustom03" class="form-label">City</label>
-                <input type="text" class="form-control" id="validationCustom03" required />
-                <div class="invalid-feedback">Please provide a valid city.</div>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+          </div>
+        </div>
+      </div>
+  </div>
+      <!-- CARDS -->
+      <div class="container my-5" style="position: relative; top: 2em;">
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <img src="home 2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">1301 Comanche Trail Tx, 78898</h5>
+                <p class="card-text">5 Bedroom 3.5 baths</p>
+                <p class="card-text">Asking Price $950,000</p>
+                <p class="card-text"><small class="text-muted">2 days ago</small></p>
               </div>
-              <div class="col-md-3">
-                <label for="validationCustom04" class="form-label">State</label>
-                <select class="form-select" id="validationCustom04" required>
-                  <option selected disabled value="">Choose...</option>
-                  <option>...</option>
-                </select>
-                <div class="invalid-feedback">Please select a valid state.</div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <img src="home 1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">1405 Sunset Tx, 78898</h5>
+                <p class="card-text">5 Bedroom 3.5 baths</p>
+                <p class="card-text">Asking Price $950,000</p>
+                <p class="card-text"><small class="text-muted">2 days ago</small></p>
               </div>
-              <div class="col-md-3">
-                <label for="validationCustom05" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="validationCustom05" required />
-                <div class="invalid-feedback">Please provide a valid zip.</div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <img src="home 3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">1405 Sunset Tx, 78898</h5>
+                <p class="card-text">5 Bedroom 3.5 baths</p>
+                <p class="card-text">Asking Price $950,000</p>
+                <p class="card-text"><small class="text-muted">2 days ago</small></p>
               </div>
-              <div class="col-12">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
-                  <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
-                  <div class="invalid-feedback">You must agree before submitting.</div>
-                </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <img src="home 4.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">1501 Elm St Tx, 78898</h5>
+                <p class="card-text">4 Bedroom 2.5 baths</p>
+                <p class="card-text">Asking Price $850,000</p>
+                <p class="card-text"><small class="text-muted">3 days ago</small></p>
               </div>
-              <div class="col-12">
-                <button class="btn" type="submit" style="color: black;background-color:white;">
-
-Submit</button>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <img src="house 5.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">1601 Oak St Tx, 78898</h5>
+                <p class="card-text">6 Bedroom 4 baths</p>
+                <p class="card-text">Asking Price $1,200,000</p>
+                <p class="card-text"><small class="text-muted">4 days ago</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <img src="house 6.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">1701 Pine St Tx, 78898</h5>
+                <p class="card-text">3 Bedroom 2 baths</p>
+                <p class="card-text">Asking Price $700,000</p>
+                <p class="card-text"><small class="text-muted">5 days ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END OF CARDS -->
+  
+      <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script>
+        let checkbox = document.getElementById("flexCheckIndeterminate");
+        checkbox.indeterminate = true;
+  
+        (function () {
+          "use strict";
+  
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.querySelectorAll(".needs-validation");
+  
+          // Loop over them and prevent submission
+          Array.prototype.slice.call(forms).forEach(function (form) {
+            form.addEventListener(
+              "submit",
+              function (event) {
+                if (!form.checkValidity()) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+  
+                form.classList.add("was-validated");
+              },
+              false
+            );
+          });
+        })();
+      </script>
+      <!-- Contact form -->
+      <div class="container" style="position: relative;top: 5em;">
+        <div class="text-center">
+          <h2>Get in touch</h2>
+          <p class="lead">Questions? Do not hesitate to contact us.</p>
+        </div>
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-6">
+            <form action="">
+              <label for="email" class="form-label">Email:</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="my@email.com"
+                class="form-control"
+              />
+              <div class="form-floating my-5">
+                <label for="name" class="form-label">Name:</label>
+                <input
+                  type="name"
+                  id="name"
+                  placeholder="e.g. Dawid"
+                  class="form-control"
+                />
+              </div>
+              <label for="subject" class="form=label">Subject</label>
+              <select name="subject" id="subject" class="form-select">
+                <option value="pricing">Pricing</option>
+                <option value="technical" selected>Technical question</option>
+                <option value="other">Other</option>
+              </select>
+  
+              <div class="form-floating my-5">
+                <textarea
+                  name="query"
+                  id="query"
+                  style="height: 150px"
+                  class="form-control"
+                  placeholder="Write a message"
+                ></textarea>
+  
+                <label for="query">Write a message</label>
+              </div>
+  
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Send!</button>
               </div>
             </form>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- KERRY WILLIAMS PHOTO/BIO -->
-    <div class="container" style="position: relative; top: 30em;">
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="whitewoman 1.jpg" class="img-fluid rounded-start" alt="..." />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Kerry Williams</h5>
-                  <p class="card-text">
-                    Kerry has 15 years of experience starting her real estate career in Waco, Texas in 2004. There she learned cutting edge marketing from the big city and brought it back home to Waco, and purchased her own real estate company. With that knowledge she has grown her company into the number one producing company in Mclennan County as of 2019.
-                  </p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- CARDS -->
-    <div class="container my-5" style="position: relative; top: 36em;">
+      <!-- FOOTER -->
+  <footer class="bg-dark text-white mt-5" style="position: relative;bottom: -6em;">
+    <div class="container py-4">
       <div class="row">
-        <div class="col-lg-6 mb-4">
-          <div class="card">
-            <img src="home 2.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">1301 Comanche Trail Tx, 78898</h5>
-              <p class="card-text">5 Bedroom 3.5 baths</p>
-              <p class="card-text">Asking Price $950,000</p>
-              <p class="card-text"><small class="text-muted">2 days ago</small></p>
-            </div>
-          </div>
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h5>Connect with us</h5>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="text-white" href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
+            <li class="ms-3"><a class="text-white" href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+            <li class="ms-3"><a class="text-white" href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+            <li class="ms-3"><a class="text-white" href="#"><i class="fab fa-linkedin fa-2x"></i></a></li>
+          </ul>
         </div>
-        <div class="col-lg-6 mb-4">
-          <div class="card">
-            <img src="home 1.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">1405 Sunset Tx, 78898</h5>
-              <p class="card-text">5 Bedroom 3.5 baths</p>
-              <p class="card-text">Asking Price $950,000</p>
-              <p class="card-text"><small class="text-muted">2 days ago</small></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 mb-4">
-          <div class="card">
-            <img src="home 3.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">1405 Sunset Tx, 78898</h5>
-              <p class="card-text">5 Bedroom 3.5 baths</p>
-              <p class="card-text">Asking Price $950,000</p>
-              <p class="card-text"><small class="text-muted">2 days ago</small></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 mb-4">
-          <div class="card">
-            <img src="home 4.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">1501 Elm St Tx, 78898</h5>
-              <p class="card-text">4 Bedroom 2.5 baths</p>
-              <p class="card-text">Asking Price $850,000</p>
-              <p class="card-text"><small class="text-muted">3 days ago</small></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 mb-4">
-          <div class="card">
-            <img src="house 5.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">1601 Oak St Tx, 78898</h5>
-              <p class="card-text">6 Bedroom 4 baths</p>
-              <p class="card-text">Asking Price $1,200,000</p>
-              <p class="card-text"><small class="text-muted">4 days ago</small></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 mb-4">
-          <div class="card">
-            <img src="house 6.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">1701 Pine St Tx, 78898</h5>
-              <p class="card-text">3 Bedroom 2 baths</p>
-              <p class="card-text">Asking Price $700,000</p>
-              <p class="card-text"><small class="text-muted">5 days ago</small></p>
-            </div>
-          </div>
+        <div class="col-md-6 text-md-end">
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Privacy Policy</a></li>
+          </ul>
+          <p class="mb-0">&copy; 2024 Kerry Williams Realty. All rights reserved.</p>
         </div>
       </div>
     </div>
-    <!-- END OF CARDS -->
+  </footer>
+  <!-- END OF FOOTER -->
 
-    <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script>
-      let checkbox = document.getElementById("flexCheckIndeterminate");
-      checkbox.indeterminate = true;
-
-      (function () {
-        "use strict";
-
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.querySelectorAll(".needs-validation");
-
-        // Loop over them and prevent submission
-        Array.prototype.slice.call(forms).forEach(function (form) {
-          form.addEventListener(
-            "submit",
-            function (event) {
-              if (!form.checkValidity()) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
-
-              form.classList.add("was-validated");
-            },
-            false
-          );
-        });
-      })();
-    </script>
-    <!-- Contact form -->
-    <div class="container" style="position: relative;top: 40em;">
-      <div class="text-center">
-        <h2>Get in touch</h2>
-        <p class="lead">Questions? Do not hesitate to contact us.</p>
-      </div>
-      <div class="row justify-content-center my-5">
-        <div class="col-lg-6">
-          <form action="">
-            <label for="email" class="form-label">Email:</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="my@email.com"
-              class="form-control"
-            />
-            <div class="form-floating my-5">
-              <input
-                type="name"
-                id="name"
-                placeholder="e.g. Dawid"
-                class="form-control"
-              />
-              <label for="name" class="form-label">Name:</label>
-            </div>
-            <label for="subject" class="form=label">Subject</label>
-            <select name="subject" id="subject" class="form-select">
-              <option value="pricing">Pricing</option>
-              <option value="technical" selected>Technical question</option>
-              <option value="other">Other</option>
-            </select>
-
-            <div class="form-floating my-5">
-              <textarea
-                name="query"
-                id="query"
-                style="height: 150px"
-                class="form-control"
-                placeholder="Write a message"
-              ></textarea>
-
-              <label for="query">Write a message</label>
-            </div>
-
-            <div class="text-center">
-              <button type="submit" class="btn btn-primary">Send!</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!-- FOOTER -->
-<footer class="bg-dark text-white mt-5" style="position: relative;bottom: -41em;">
-  <div class="container py-4">
-    <div class="row">
-      <div class="col-md-6 mb-4 mb-md-0">
-        <h5>Connect with us</h5>
-        <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="text-white" href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
-          <li class="ms-3"><a class="text-white" href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
-          <li class="ms-3"><a class="text-white" href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
-          <li class="ms-3"><a class="text-white" href="#"><i class="fab fa-linkedin fa-2x"></i></a></li>
-        </ul>
-      </div>
-      <div class="col-md-6 text-md-end">
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-white">Privacy Policy</a></li>
-        </ul>
-        <p class="mb-0">&copy; 2024 Kerry Williams Realty. All rights reserved.</p>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- END OF FOOTER -->
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-B4gt1jrGC7Jh4AgQPq8Ut8drMJ/mj8g6h1fujjcdk+Z7zwfF5F5rGZIu0UpFmBp4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9A8BHwjO3pF1Uhtd3lyr2dX+L1l9Fi8yW8dgy/7Nf6yk5oMtvzTQ6N9" crossorigin="anonymous"></script>
+</body>
 </html>
